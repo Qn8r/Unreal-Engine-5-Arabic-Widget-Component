@@ -1,4 +1,6 @@
-# Arabic World Text Component
+# مكوّن النص العربي داخل العالم
+
+**Arabic World Text Component** — a UE5 plugin for correct Arabic text in world space.
 
 إضافة نص عربي صحيح داخل العالم.
 تدعم الكتابة من اليمين إلى اليسار، وتدعم مواجهة الكاميرا (تتبع اللاعب / الكمايرة) وتدعم النص المعروض من الجهتين
