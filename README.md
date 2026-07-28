@@ -22,16 +22,15 @@
 
 بعد إضافة الأداة: تستطيع التعديل في تفاصيل المكون
 
-<img width="1116" height="628" alt="1" src="https://github.com/user-attachments/assets/621ca4ae-d2c7-4b81-b79e-44306b58d735" />
-
-يوجد خيارات كثيرة للتعديل ومن اهمها وضع الكاميرا
+<img width="3838" height="2052" alt="2" src="https://github.com/user-attachments/assets/6a141276-be68-495b-a39b-108de35a811b" />
 
 
-<img width="1131" height="1746" alt="4" src="https://github.com/user-attachments/assets/e6497688-7d3b-4f7b-8b76-f7ebbc00ac07" />
 
-يمكن ايضا إضافة الأداة داخل البلوبرنت
+يمكن أيضا إضافة الأداة داخل البلوبرنت
 
 <img width="3838" height="2054" alt="5" src="https://github.com/user-attachments/assets/4c1bcae2-a141-43cf-916d-6f3a4fe2586f" />
+
+يوجد خيارات كثيرة للتعديل ومن اهمها وضع الكاميرا - جميع التفاصيل موجودة في ملف options.md
 
 تم البناء والاختبار على Unreal Engine 5.8.1 وWin64.
 
