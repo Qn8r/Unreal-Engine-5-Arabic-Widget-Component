@@ -16,8 +16,14 @@
 2. فعّل الإضافة عن طريق /  Plugin > Editor
 4. ابحث عن `Arabic Widget Text Actor` .
 
-يوجد ماب داخل الإضافة:
-`All/Plugin/ArabicWidget/Demo/L_ArabicWidgetDemo`
+طريقة الاستخدام:
+
+<img width="3838" height="2045" alt="1" src="https://github.com/user-attachments/assets/04093f83-e942-43b8-a421-822be59bf7ec" />
+
+
+<img width="3838" height="2052" alt="2" src="https://github.com/user-attachments/assets/e43798ee-2117-4ae2-96f8-36b85473b33d" />
+
+
 
 تم البناء والاختبار على Unreal Engine 5.8.1 وWin64.
 
