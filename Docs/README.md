@@ -17,7 +17,8 @@
 
 ## غرفة التجربة
 
-ضع `Arabic Widget Demo Room` في أي مستوى، وتُبنى الغرفة تلقائياً.
+افتح:
+`/ArabicWidget/Demo/L_ArabicWidgetDemo`
 
 الغرفة تعرض كل الخطوط الـ16، وتستخدم `Engine Cube` وخامة المحرك فقط.
 
