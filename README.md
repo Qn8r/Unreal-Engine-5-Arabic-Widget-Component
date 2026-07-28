@@ -16,8 +16,7 @@
 2. فعّل الإضافة عن طريق /  Plugin > Editor
 4. ابحث عن `Arabic Widget Text Actor` .
 
-يوجد ماب داخل الإضافة:
-`All/Plugin/ArabicWidget/Demo/L_ArabicWidgetDemo`
+لتجربة كل الخطوط، ضع `Arabic Widget Demo Room` في أي مستوى، وتُبنى الغرفة تلقائياً.
 
 تم البناء والاختبار على Unreal Engine 5.8.1 وWin64.
 

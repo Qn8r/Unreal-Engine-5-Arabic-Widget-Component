@@ -256,17 +256,6 @@ bool FArabicWidgetDemoRoomTest::RunTest(
 		}
 	}
 
-	TestNotNull(
-		TEXT("Packaged demo map loads"),
-		LoadObject<UWorld>(
-			nullptr,
-			TEXT(
-				"/ArabicWidget/Demo/"
-				"L_ArabicWidgetDemo.L_ArabicWidgetDemo"
-			)
-		)
-	);
-
 	return true;
 }
 
