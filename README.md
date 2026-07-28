@@ -10,10 +10,12 @@
 - 16 خط عربي بترخيص OFL.
 
 ## التثبيت
-
 1. انسخ المجلد إلى داخل مشروعك `YourProject/Plugins/ArabicWidget`.
 2. فعّل الإضافة عن طريق /  Plugin > Editor
-4. ابحث عن `Arabic Widget Text Actor` .
+
+<img width="3838" height="2052" alt="0" src="https://github.com/user-attachments/assets/772e4451-6299-45ad-bff9-79e51611037a" />
+
+5.  ابحث عن `Arabic Widget Text Actor` .
 
 <img width="3838" height="2061" alt="1" src="https://github.com/user-attachments/assets/881b7329-18b7-44d9-b5eb-3989e62404bd" />
 
