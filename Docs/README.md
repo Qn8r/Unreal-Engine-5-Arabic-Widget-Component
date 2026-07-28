@@ -15,11 +15,4 @@
 - `Set Two Sided Mode`
 - `Refresh World Text`
 
-## غرفة التجربة
-
-افتح:
-`/ArabicWidget/Demo/L_ArabicWidgetDemo`
-
-الغرفة تعرض كل الخطوط الـ16، وتستخدم `Engine Cube` وخامة المحرك فقط.
-
 الدعم المؤكد حالياً: Unreal Engine 5.8.1 على Win64.
