@@ -1,23 +1,23 @@
 # Arabic World Text Component
 
-إضافة Unreal لعرض نص عربي صحيح داخل العالم.
-تدعم التشكيل وRTL وBlueprint ومواجهة الكاميرا والعرض من الجهتين.
+إضافة نص عربي صحيح داخل العالم.
+تدعم الكتابة من اليمين إلى اليسار، وتدعم مواجهة الكاميرا والعرض من الجهتين (تتبع اللاعب / الكمايرة)
 
-## الموجود
+## الموجود 
 
-- Actor.
+- عنصر الإضافة "- Actor."
 - لوحة بالعربي أو الإنجليزي.
 - 16 خط عربي بترخيص OFL.
-- غرفة عرض بسيطة فقط.
+- غرفة عرض بسيطة
 
 ## التثبيت
 
-1. انسخ المجلد إلى `YourProject/Plugins/ArabicWidget`.
-2. فعّل الإضافة عن طريق / Editor > Plugin
+1. انسخ المجلد إلى داخل مشروعك `YourProject/Plugins/ArabicWidget`.
+2. فعّل الإضافة عن طريق /  Plugin > Editor
 4. ابحث عن `Arabic Widget Text Actor` .
 
-الماب الموجود داخل الإضافة:
-`/ArabicWidget/Demo/L_ArabicWidgetDemo`
+يوجد ماب داخل الإضافة:
+`All/Plugin/ArabicWidget/Demo/L_ArabicWidgetDemo`
 
 تم البناء والاختبار على Unreal Engine 5.8.1 وWin64.
 
