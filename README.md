@@ -11,7 +11,8 @@
 
 ## التثبيت
 1. انسخ المجلد إلى داخل مشروعك `YourProject/Plugins/ArabicWidget`.
-2. فعّل الإضافة عن طريق /  Plugin > Editor
+2. فعّل الإضافة عن طريق /
+خلال: Edit ثم Plugin 
 
 <img width="3838" height="2052" alt="0" src="https://github.com/user-attachments/assets/772e4451-6299-45ad-bff9-79e51611037a" />
 
