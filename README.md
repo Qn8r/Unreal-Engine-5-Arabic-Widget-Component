@@ -16,11 +16,10 @@
 2. فعّل الإضافة عن طريق /  Plugin > Editor
 4. ابحث عن `Arabic Widget Text Actor` .
 
-طريقة الاستخدام:
-اختيار علامة + ثم البحث 
 <img width="3838" height="2061" alt="1" src="https://github.com/user-attachments/assets/881b7329-18b7-44d9-b5eb-3989e62404bd" />
 
 بعد إضافة الاداة: تستطيع التعديل في تفاصيل المكون
+
 <img width="3838" height="2052" alt="2" src="https://github.com/user-attachments/assets/949c802b-9cc3-43ef-94d7-f9303fc3055c" />
 
 يوجد خيارات كثيرة للتعديل ومن اهمها وضع الكاميرا
