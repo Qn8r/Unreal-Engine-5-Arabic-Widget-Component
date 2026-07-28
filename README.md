@@ -36,6 +36,7 @@
 تم البناء والاختبار على Unreal Engine 5.8.1 وWin64.
 
 - [الاستخدام](Docs/README.md)
+- [الخيارات](Docs/OPTIONS.md)
 - [الخطوط](Docs/FONTS.md)
 - [الاختبار](Docs/TESTING.md)
 
