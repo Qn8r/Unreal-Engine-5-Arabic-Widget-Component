@@ -1,0 +1,31 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0.0",
+	"FriendlyName": "Arabic World Text Component",
+	"Description": "Localized world-space text with Arabic shaping, right-to-left layout, camera-facing modes, and readable two-sided rendering.",
+	"Category": "User Interface",
+	"CreatedBy": "Qn8r",
+	"CreatedByURL": "https://github.com/Qn8r",
+	"DocsURL": "https://github.com/Qn8r/Unreal-Engine-5-Arabic-Widget-Component#readme",
+	"SupportURL": "https://github.com/Qn8r/Unreal-Engine-5-Arabic-Widget-Component/issues",
+	"CanContainContent": true,
+	"EnabledByDefault": false,
+	"IsBetaVersion": true,
+	"Installed": false,
+	"SupportedTargetPlatforms": [
+		"Win64"
+	],
+	"Modules": [
+		{
+			"Name": "ArabicWidget",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "ArabicWidgetEditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	]
+}

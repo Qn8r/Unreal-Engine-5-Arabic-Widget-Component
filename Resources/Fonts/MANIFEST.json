@@ -1,0 +1,55 @@
+{
+  "source_repository": "https://github.com/google/fonts",
+  "source_revision": "7ff85c87f93ea6cca5f41c69f2e4edcb90240f26",
+  "license": "SIL Open Font License 1.1",
+  "fonts": [
+    {
+      "family": "Amiri",
+      "file": "Amiri/Amiri-Regular.ttf",
+      "source_path": "ofl/amiri/Amiri-Regular.ttf",
+      "sha256": "AB391C4147D054C48976E98322AD0EEFE1427AA0E0502A12A4C75D80A70CFCD7"
+    },
+    {
+      "family": "Cairo",
+      "file": "Cairo/Cairo[slnt,wght].ttf",
+      "source_path": "ofl/cairo/Cairo[slnt,wght].ttf",
+      "sha256": "667C987182391C91F4E57A2F455B1794FB5E3EE6CA4EF3383E86BB690FA9C964"
+    },
+    {
+      "family": "Tajawal",
+      "file": "Tajawal/Tajawal-Regular.ttf",
+      "source_path": "ofl/tajawal/Tajawal-Regular.ttf",
+      "sha256": "6882892DA3E03527D5DB2BBAB3B48BDE6EF2E878A43F522D1A4EEBDA90010A19"
+    },
+    {
+      "family": "Noto Sans Arabic",
+      "file": "NotoSansArabic/NotoSansArabic[wdth,wght].ttf",
+      "source_path": "ofl/notosansarabic/NotoSansArabic[wdth,wght].ttf",
+      "sha256": "63111B5B2E074DD48CC67692E0A2726D86EE94C1C37FE8598257B7B4E87E869E"
+    },
+    {
+      "family": "Noto Naskh Arabic",
+      "file": "NotoNaskhArabic/NotoNaskhArabic[wght].ttf",
+      "source_path": "ofl/notonaskharabic/NotoNaskhArabic[wght].ttf",
+      "sha256": "67B5A525A661B607971FBD3F96A81B89D3A768E74534FCA84F18AC97E6FAB72F"
+    },
+    {
+      "family": "Noto Kufi Arabic",
+      "file": "NotoKufiArabic/NotoKufiArabic[wght].ttf",
+      "source_path": "ofl/notokufiarabic/NotoKufiArabic[wght].ttf",
+      "sha256": "494F6B61469D7A02A2D63F0FC4930BB007388D8CFE551DE5EB98354E100889F3"
+    },
+    {
+      "family": "Reem Kufi",
+      "file": "ReemKufi/ReemKufi[wght].ttf",
+      "source_path": "ofl/reemkufi/ReemKufi[wght].ttf",
+      "sha256": "33EAD1986CD48C138C4D906C9E5A6341877268461F97623409A2014DE1CD4AA4"
+    },
+    {
+      "family": "Readex Pro",
+      "file": "ReadexPro/ReadexPro[HEXP,wght].ttf",
+      "source_path": "ofl/readexpro/ReadexPro[HEXP,wght].ttf",
+      "sha256": "268BBA7E1E8F3B14D798B3FB0E40EBAA3FC39308C9AC0020E2FAF6DF181CC30E"
+    }
+  ]
+}
