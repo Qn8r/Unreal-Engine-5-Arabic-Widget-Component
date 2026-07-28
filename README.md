@@ -5,18 +5,18 @@
 
 ## الموجود
 
-- Actor ومكوّن جاهزان.
-- لوحة Details بالعربي أو الإنجليزي.
+- Actor.
+- لوحة بالعربي أو الإنجليزي.
 - 16 خط عربي بترخيص OFL.
-- غرفة عرض بسيطة بأصول Unreal فقط.
+- غرفة عرض بسيطة فقط.
 
 ## التثبيت
 
 1. انسخ المجلد إلى `YourProject/Plugins/ArabicWidget`.
-2. فعّل الإضافة وأعد بناء المشروع.
-3. ابحث عن `Arabic Widget Text Actor` في Place Actors.
+2. فعّل الإضافة عن طريق / Editor > Plugin
+4. ابحث عن `Arabic Widget Text Actor` .
 
-خريطة التجربة:
+الماب الموجود داخل الإضافة:
 `/ArabicWidget/Demo/L_ArabicWidgetDemo`
 
 تم البناء والاختبار على Unreal Engine 5.8.1 وWin64.
