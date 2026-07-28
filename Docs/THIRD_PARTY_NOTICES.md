@@ -1,8 +1,6 @@
-# إشعارات الطرف الثالث
+# تراخيص الخطوط
 
-## مجموعة الخطوط العربية
-
-تتضمن الإضافة عائلات الخطوط التالية:
+الخطوط المرفقة:
 
 - Amiri
 - Cairo
@@ -12,14 +10,16 @@
 - Noto Kufi Arabic
 - Reem Kufi
 - Readex Pro
-
-حُمّلت هذه الخطوط من مستودع Google Fonts، ويعاد توزيعها وفق
-**SIL Open Font License, Version 1.1**. يحتوي مجلد كل عائلة داخل
-`Resources/Fonts` على النص القانوني الأصلي `OFL.txt` وملف بيانات
-`METADATA.pb`. يسجل `Resources/Fonts/MANIFEST.json` إصدار المصدر المثبّت
-وبصمة كل ملف.
+- Scheherazade New
+- Lateef
+- Markazi Text
+- Harmattan
+- Mada
+- Changa
+- El Messiri
+- Alexandria
 
 المصدر: <https://github.com/google/fonts>
 
-لا تحتوي الإضافة على أصول Marketplace أو شخصيات نموذجية أو محتوى منقول من
-مشروع Farwake.
+كل خط موزع تحت `SIL Open Font License 1.1`.
+ملف `OFL.txt` وبيانات المصدر موجودة داخل مجلد كل خط في `Resources/Fonts`.

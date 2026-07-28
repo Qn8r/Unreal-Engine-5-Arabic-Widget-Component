@@ -7,7 +7,7 @@
 
 class UMaterialInterface;
 
-/** محاذاة النص أفقياً. */
+/** محاذاة النص. */
 UENUM(BlueprintType)
 enum class EArabicWidgetTextAlignment : uint8
 {
@@ -16,7 +16,7 @@ enum class EArabicWidgetTextAlignment : uint8
 	Right	UMETA(DisplayName = "Right")
 };
 
-/** اتجاه تدفق النص المستخدم في التشكيل والتوطين. */
+/** اتجاه النص. */
 UENUM(BlueprintType)
 enum class EArabicWidgetTextDirection : uint8
 {
@@ -26,7 +26,7 @@ enum class EArabicWidgetTextDirection : uint8
 	Culture			UMETA(DisplayName = "Current Game Language")
 };
 
-/** طريقة توجيه المكوّن نحو كاميرا اللاعب. */
+/** مواجهة الكاميرا. */
 UENUM(BlueprintType)
 enum class EArabicWidgetTextFaceCameraMode : uint8
 {
@@ -35,7 +35,7 @@ enum class EArabicWidgetTextFaceCameraMode : uint8
 	Full		UMETA(DisplayName = "Full")
 };
 
-/** طريقة عرض النص عند رؤيته من الخلف. */
+/** عرض الوجه الخلفي. */
 UENUM(BlueprintType)
 enum class EArabicWidgetTextTwoSidedMode : uint8
 {
@@ -44,7 +44,7 @@ enum class EArabicWidgetTextTwoSidedMode : uint8
 	ReadableBack	UMETA(DisplayName = "Readable Back")
 };
 
-/** نص عالمي مبني على Widget، مع تشكيل عربي ودعم اتجاه RTL. */
+/** نص عربي داخل العالم. */
 UCLASS(
 	ClassGroup = (ArabicText),
 	HideCategories = (
@@ -85,7 +85,7 @@ public:
 
 	// المحتوى
 
-	/** نص من نوع FText جاهز للتوطين ويظهر على الوجهين. */
+	/** النص المعروض. */
 	UPROPERTY(
 		EditAnywhere,
 		BlueprintReadWrite,
@@ -99,7 +99,7 @@ public:
 
 	// المظهر
 
-	/** أصل الخط وإعداداته الطباعية. تستخدم None خط المحرك الافتراضي. */
+	/** الخط. None يستخدم خط المحرك. */
 	UPROPERTY(
 		EditAnywhere,
 		BlueprintReadWrite,
@@ -111,7 +111,7 @@ public:
 	)
 	FSlateFontInfo Font;
 
-	/** لون النص الأمامي وشفافيته. */
+	/** لون النص. */
 	UPROPERTY(
 		EditAnywhere,
 		BlueprintReadWrite,
@@ -123,7 +123,7 @@ public:
 	)
 	FLinearColor TextColor;
 
-	/** إزاحة ظل النص بوحدات بكسل Slate. */
+	/** إزاحة الظل. */
 	UPROPERTY(
 		EditAnywhere,
 		BlueprintReadWrite,
@@ -132,7 +132,7 @@ public:
 	)
 	FVector2D ShadowOffset;
 
-	/** لون ظل النص وشفافيته. */
+	/** لون الظل. */
 	UPROPERTY(
 		EditAnywhere,
 		BlueprintReadWrite,
@@ -143,7 +143,7 @@ public:
 
 	// الخلفية
 
-	/** لون لوحة الخلفية. قيمة Alpha صفر تخفي اللوحة. */
+	/** لون الخلفية. */
 	UPROPERTY(
 		EditAnywhere,
 		BlueprintReadWrite,
@@ -155,7 +155,7 @@ public:
 	)
 	FLinearColor PanelBackgroundColor;
 
-	/** المسافة بين النص وحواف الخلفية. */
+	/** حشوة الخلفية. */
 	UPROPERTY(
 		EditAnywhere,
 		BlueprintReadWrite,
@@ -169,7 +169,7 @@ public:
 
 	// التخطيط
 
-	/** يلتف النص الطويل على أسطر إضافية. */
+	/** التفاف تلقائي. */
 	UPROPERTY(
 		EditAnywhere,
 		BlueprintReadWrite,
@@ -181,7 +181,7 @@ public:
 	)
 	bool bAutoWrapText;
 
-	/** أقصى عرض في Slate قبل الانتقال إلى سطر جديد. */
+	/** عرض الالتفاف. */
 	UPROPERTY(
 		EditAnywhere,
 		BlueprintReadWrite,
@@ -198,7 +198,7 @@ public:
 	)
 	float MaximumTextWidth;
 
-	/** المحاذاة الأفقية داخل سطح النص. */
+	/** المحاذاة. */
 	UPROPERTY(
 		EditAnywhere,
 		BlueprintReadWrite,
@@ -210,7 +210,7 @@ public:
 	)
 	EArabicWidgetTextAlignment HorizontalAlignment;
 
-	/** اتجاه تدفق النص الذي يستخدمه تشكيل Slate. */
+	/** اتجاه الكتابة. */
 	UPROPERTY(
 		EditAnywhere,
 		BlueprintReadWrite,
@@ -224,7 +224,7 @@ public:
 
 	// الوجهان
 
-	/** يحدد إنشاء سطح ثانٍ خلف السطح الأمامي. */
+	/** وضع الوجه الخلفي. */
 	UPROPERTY(
 		EditAnywhere,
 		BlueprintReadWrite,
@@ -236,7 +236,7 @@ public:
 	)
 	EArabicWidgetTextTwoSidedMode TwoSidedMode;
 
-	/** يطبّق ألوان الوجه الأمامي على الوجه الخلفي. */
+	/** نفس ألوان الوجه الأمامي. */
 	UPROPERTY(
 		EditAnywhere,
 		BlueprintReadWrite,
@@ -251,7 +251,7 @@ public:
 	)
 	bool bMatchFrontAppearance;
 
-	/** لون النص المخصص للوجه الخلفي. */
+	/** لون نص الخلف. */
 	UPROPERTY(
 		EditAnywhere,
 		BlueprintReadWrite,
@@ -266,7 +266,7 @@ public:
 	)
 	FLinearColor BackTextColor;
 
-	/** لون الخلفية المخصص للوجه الخلفي. */
+	/** لون خلفية الخلف. */
 	UPROPERTY(
 		EditAnywhere,
 		BlueprintReadWrite,
@@ -283,7 +283,7 @@ public:
 
 	// الكاميرا
 
-	/** يحدد دوران النص نحو كاميرا اللاعب. */
+	/** وضع مواجهة الكاميرا. */
 	UPROPERTY(
 		EditAnywhere,
 		BlueprintReadWrite,
@@ -295,7 +295,7 @@ public:
 	)
 	EArabicWidgetTextFaceCameraMode FaceCameraMode;
 
-	/** فهرس كاميرا اللاعب المستخدمة في وضع Face Camera. */
+	/** رقم اللاعب. */
 	UPROPERTY(
 		EditAnywhere,
 		BlueprintReadWrite,
@@ -312,7 +312,7 @@ public:
 	)
 	int32 CameraPlayerIndex;
 
-	/** دوران إضافي يُطبّق بعد توجيه النص نحو الكاميرا. */
+	/** إزاحة الدوران. */
 	UPROPERTY(
 		EditAnywhere,
 		BlueprintReadWrite,
@@ -330,7 +330,7 @@ public:
 
 	// الأداء
 
-	/** أقصى مسافة للرسم بالسنتيمتر. الصفر يعني بلا حد. */
+	/** مسافة العرض. صفر بلا حد. */
 	UPROPERTY(
 		EditAnywhere,
 		BlueprintReadWrite,
@@ -347,23 +347,23 @@ public:
 
 	// واجهة Blueprint
 
-	/** يغيّر النص المحلي المعروض ويحدّث الوجهين. */
+	/** يغيّر النص. */
 	UFUNCTION(BlueprintCallable, Category = "Arabic Widget Text")
 	void SetWorldText(const FText& NewText);
 
-	/** يغيّر وضع مواجهة الكاميرا. */
+	/** يغيّر مواجهة الكاميرا. */
 	UFUNCTION(BlueprintCallable, Category = "Arabic Widget Text")
 	void SetFaceCameraMode(EArabicWidgetTextFaceCameraMode NewMode);
 
-	/** يغيّر وضع الرسم ثنائي الوجه. */
+	/** يغيّر وضع الوجهين. */
 	UFUNCTION(BlueprintCallable, Category = "Arabic Widget Text")
 	void SetTwoSidedMode(EArabicWidgetTextTwoSidedMode NewMode);
 
-	/** يعيد بناء الوجهين ورسمهما. */
+	/** يحدّث النص. */
 	UFUNCTION(BlueprintCallable, Category = "Arabic Widget Text")
 	void RefreshWorldText();
 
-	/** يعيّن خامة Widget الأساسية ويزامن الوجه الخلفي. */
+	/** يزامن خامة الوجهين. */
 	virtual void SetMaterial(
 		int32 ElementIndex,
 		UMaterialInterface* Material
@@ -388,10 +388,10 @@ protected:
 #endif
 
 private:
-	/** يحدّث المحتوى والوجهين ومسافة الإخفاء وحالة إعادة الرسم. */
+	/** يحدّث المكوّن. */
 	void RefreshComponent();
 
-	/** يعيد بناء سطح Widget واحد باستخدام النمط الحالي. */
+	/** يبني سطح النص. */
 	void RebuildSurface(
 		UWidgetComponent* Surface,
 		const FLinearColor& SurfaceTextColor,
@@ -399,26 +399,26 @@ private:
 		bool bMirrorHorizontally
 	);
 
-	/** ينشئ الوجه الخلفي الاختياري أو يحدّثه أو يزيله. */
+	/** يحدّث الوجه الخلفي. */
 	void UpdateBackSurface();
 	void CreateBackSurface();
 	void SyncBackSurface();
 	void SyncBackMaterial();
 	void DestroyBackSurface();
 
-	/** يطبّق إعدادات Tick وإعادة الرسم والإخفاء حسب المسافة. */
+	/** يحدّث إعدادات الأداء. */
 	void SyncPerformanceSettings();
 
-	/** يطلب تحديث Render Target المخزّن فوراً. */
+	/** يطلب إعادة الرسم. */
 	void RequestSurfaceUpdate(UWidgetComponent* Surface);
 
-	/** يحفظ الدوران أو يستعيده عند تغيير وضع Face Camera. */
+	/** يزامن وضع الكاميرا. */
 	void SyncFaceCameraMode();
 
-	/** يدوّر المكوّن نحو كاميرا اللاعب المحددة. */
+	/** يوجّه النص للكاميرا. */
 	void UpdateFaceCamera();
 
-	/** مكوّن Widget مؤقت للوجه الخلفي الاختياري. */
+	/** سطح الوجه الخلفي. */
 	UPROPERTY(
 		Transient,
 		DuplicateTransient,

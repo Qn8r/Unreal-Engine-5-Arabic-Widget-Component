@@ -56,7 +56,7 @@ namespace ArabicWidgetText
 		}
 	}
 
-	// يرجع إلى خط المحرك إذا كان أصل الخط غير صالح.
+	// خط المحرك عند عدم وجود خط.
 	FSlateFontInfo ResolveFont(const FSlateFontInfo& Source)
 	{
 		if (Source.HasValidFont())
@@ -399,7 +399,7 @@ void UArabicWidgetTextComponent::RebuildSurface(
 
 void UArabicWidgetTextComponent::UpdateBackSurface()
 {
-	// سطح مستقل يمنع انعكاس الوجه الخلفي الافتراضي في Unreal.
+	// سطح منفصل للوجه الخلفي.
 	SetTwoSided(false);
 
 	if (
@@ -468,7 +468,7 @@ void UArabicWidgetTextComponent::CreateBackSurface()
 
 	BackWidgetComponent->SetupAttachment(this);
 
-	// إزاحة بسيطة تمنع تعارض العمق بين السطحين.
+	// يمنع تداخل السطحين.
 	BackWidgetComponent->SetRelativeTransform(
 		FTransform(
 			FRotator(0.0f, 180.0f, 0.0f),

@@ -1,51 +1,28 @@
-# Arabic World Text Component for Unreal Engine 5
+# Arabic World Text Component
 
-إضافة C++ مستقلة لعرض النص العربي داخل العالم ثلاثي الأبعاد في Unreal Engine.
-تعتمد على Slate للحصول على تشكيل صحيح للحروف واتجاه كتابة من اليمين إلى اليسار،
-وتوفر Actor جاهزاً ومكوّناً قابلاً للاستخدام من Blueprint.
+إضافة Unreal لعرض نص عربي صحيح داخل العالم.
+تدعم التشكيل وRTL وBlueprint ومواجهة الكاميرا والعرض من الجهتين.
 
-## أهم المزايا
+## الموجود
 
-- تشكيل كامل للنص العربي وأنظمة الكتابة المركّبة.
-- اتجاه تلقائي أو RTL أو LTR أو حسب لغة اللعبة.
-- التفاف النص والمحاذاة والخلفية والظل وإعدادات الخط.
-- مواجهة كاملة للكاميرا أو دوران حول محور Yaw فقط.
-- وجه خلفي معكوس أو وجه خلفي مقروء.
-- لوحة Details بالعربية أو الإنجليزية أو باللغتين.
-- ثمانية خطوط عربية مفتوحة الترخيص وجاهزة داخل الإضافة.
-
-## المتطلبات
-
-- Unreal Engine 5.8
-- مشروع C++
-- Win64 هو الهدف الذي تم بناؤه واختباره حالياً
+- Actor ومكوّن جاهزان.
+- لوحة Details بالعربي أو الإنجليزي.
+- 16 خط عربي بترخيص OFL.
+- غرفة عرض بسيطة بأصول Unreal فقط.
 
 ## التثبيت
 
-1. نزّل المستودع أو استنسخه.
-2. ضع محتوياته داخل `YourProject/Plugins/ArabicWidget`.
-3. افتح المشروع وفعّل **Arabic World Text Component**.
-4. أعد بناء المشروع ثم شغّل Unreal Editor.
+1. انسخ المجلد إلى `YourProject/Plugins/ArabicWidget`.
+2. فعّل الإضافة وأعد بناء المشروع.
+3. ابحث عن `Arabic Widget Text Actor` في Place Actors.
 
-## الاستخدام السريع
+خريطة التجربة:
+`/ArabicWidget/Demo/L_ArabicWidgetDemo`
 
-1. ابحث عن **Arabic Widget Text Actor** في **Place Actors**.
-2. ضعه في المستوى واكتب النص داخل **Content**.
-3. استخدم Amiri الافتراضي أو اختر خطاً من `/ArabicWidget/Fonts`.
-4. اختر اتجاه النص ووضع مواجهة الكاميرا من لوحة Details.
+تم البناء والاختبار على Unreal Engine 5.8.1 وWin64.
 
-توجد وثائق الاستخدام الكاملة في [Docs/README.md](Docs/README.md)، وقائمة الخطوط
-في [Docs/FONTS.md](Docs/FONTS.md)، وخطة الاختبار في
-[Docs/TESTING.md](Docs/TESTING.md).
+- [الاستخدام](Docs/README.md)
+- [الخطوط](Docs/FONTS.md)
+- [الاختبار](Docs/TESTING.md)
 
-## الاختبار
-
-تتضمن وحدة `ArabicWidgetEditor` اختبارات أتمتة تحت مجموعة `ArabicWidget`.
-نجح بناء Editor وDevelopment وShipping على Unreal Engine 5.8.1. يبقى الاختبار
-المرئي داخل PIE ونسخة لعبة معبأة بوابة مستقلة قبل الإصدار النهائي على Fab.
-
-## الترخيص
-
-الكود منشور وفق ترخيص [Apache License 2.0](LICENSE). الخطوط المرفقة لها تراخيص
-SIL Open Font License 1.1 مستقلة، ويحتوي مجلد كل خط على نص ترخيصه الأصلي.
-راجع [إشعارات الطرف الثالث](Docs/THIRD_PARTY_NOTICES.md).
+الكود تحت [Apache 2.0](LICENSE)، والخطوط لها تراخيص OFL مستقلة.

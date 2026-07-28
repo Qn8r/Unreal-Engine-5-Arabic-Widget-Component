@@ -50,6 +50,54 @@
       "file": "ReadexPro/ReadexPro[HEXP,wght].ttf",
       "source_path": "ofl/readexpro/ReadexPro[HEXP,wght].ttf",
       "sha256": "268BBA7E1E8F3B14D798B3FB0E40EBAA3FC39308C9AC0020E2FAF6DF181CC30E"
+    },
+    {
+      "family": "Scheherazade New",
+      "file": "ScheherazadeNew/ScheherazadeNew-Regular.ttf",
+      "source_path": "ofl/scheherazadenew/ScheherazadeNew-Regular.ttf",
+      "sha256": "794BAC8DC9E83D1D620BC471EA694F5F31D0965CE8006490A79DFC51A2D283B3"
+    },
+    {
+      "family": "Lateef",
+      "file": "Lateef/Lateef-Regular.ttf",
+      "source_path": "ofl/lateef/Lateef-Regular.ttf",
+      "sha256": "FCBD9E0227A4D7238880DEFA5FD74C012D69351150709E559A8577446145C2FC"
+    },
+    {
+      "family": "Markazi Text",
+      "file": "MarkaziText/MarkaziText[wght].ttf",
+      "source_path": "ofl/markazitext/MarkaziText[wght].ttf",
+      "sha256": "424B7331681160FF2A4B209BFC356EA9564D429A7DAEA43EE4DC28DE8FF4F9FE"
+    },
+    {
+      "family": "Harmattan",
+      "file": "Harmattan/Harmattan-Regular.ttf",
+      "source_path": "ofl/harmattan/Harmattan-Regular.ttf",
+      "sha256": "5FBAAFC51AD21663729B168AFAFF5F28D3E3087F1FC736ADA32D7CD99674C0E0"
+    },
+    {
+      "family": "Mada",
+      "file": "Mada/Mada[wght].ttf",
+      "source_path": "ofl/mada/Mada[wght].ttf",
+      "sha256": "BF4D193EE78CEA2FD8BDC9E64E5CB7E8A19FF76AB74F97A9A4A0E80F8F4CEFDE"
+    },
+    {
+      "family": "Changa",
+      "file": "Changa/Changa[wght].ttf",
+      "source_path": "ofl/changa/Changa[wght].ttf",
+      "sha256": "7C4F7A14D4B70AC8816EA8DF3A0B127AEE4C5F5AF7239ACA2AFECC84DDC7F4D3"
+    },
+    {
+      "family": "El Messiri",
+      "file": "ElMessiri/ElMessiri[wght].ttf",
+      "source_path": "ofl/elmessiri/ElMessiri[wght].ttf",
+      "sha256": "5D58D5259D2ACCCCBA39CFFE12E1226E88B6AFC5150E3605EB2A9C2FE06CCAB0"
+    },
+    {
+      "family": "Alexandria",
+      "file": "Alexandria/Alexandria[wght].ttf",
+      "source_path": "ofl/alexandria/Alexandria[wght].ttf",
+      "sha256": "DB8AE03B62D55A65AA4E04307878DF8C00D6E5388E4800635CBE0E22B6411B64"
     }
   ]
 }

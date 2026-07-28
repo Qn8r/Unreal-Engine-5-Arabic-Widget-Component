@@ -6,7 +6,7 @@
 
 class UArabicWidgetTextComponent;
 
-/** Actor جاهز للوضع ويحتوي مكوّن النص العربي. */
+/** Actor جاهز للنص العربي. */
 UCLASS(
 	BlueprintType,
 	Blueprintable,
@@ -28,7 +28,7 @@ class ARABICWIDGET_API AArabicWidgetTextActor : public AActor
 public:
 	AArabicWidgetTextActor();
 
-	/** مكوّن النص العربي العالمي المبني على Widget. */
+	/** مكوّن النص. */
 	UPROPERTY(
 		VisibleAnywhere,
 		BlueprintReadOnly,

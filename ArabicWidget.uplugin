@@ -11,8 +11,8 @@
 	"SupportURL": "https://github.com/Qn8r/Unreal-Engine-5-Arabic-Widget-Component/issues",
 	"CanContainContent": true,
 	"EnabledByDefault": false,
-	"IsBetaVersion": true,
-	"Installed": false,
+	"IsBetaVersion": false,
+	"Installed": true,
 	"SupportedTargetPlatforms": [
 		"Win64"
 	],

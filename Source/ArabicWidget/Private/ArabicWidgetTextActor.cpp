@@ -1,7 +1,7 @@
 #include "ArabicWidgetTextActor.h"
 #include "ArabicWidgetTextComponent.h"
 
-// ينشئ مكوّن النص ويجعله المكوّن الجذري.
+// مكوّن النص هو الجذر.
 AArabicWidgetTextActor::AArabicWidgetTextActor()
 {
 	PrimaryActorTick.bCanEverTick = false;

@@ -4,7 +4,7 @@
 #include "UObject/Object.h"
 #include "ArabicWidgetTextEditorSettings.generated.h"
 
-/** لغة لوحة Details الخاصة بالمكوّن. */
+/** لغة لوحة Details. */
 UENUM()
 enum class EArabicWidgetTextPanelLanguage : uint8
 {
@@ -13,14 +13,14 @@ enum class EArabicWidgetTextPanelLanguage : uint8
 	Bilingual
 };
 
-/** تفضيل محفوظ لكل مستخدم للغة لوحة Details. */
+/** إعداد لغة اللوحة. */
 UCLASS(Config = EditorPerProjectUserSettings)
 class ARABICWIDGETEDITOR_API UArabicWidgetTextEditorSettings : public UObject
 {
 	GENERATED_BODY()
 
 public:
-	/** العرض الثنائي هو الافتراضي لتسهيل التطوير والبحث. */
+	/** الوضع الافتراضي ثنائي. */
 	UPROPERTY(Config)
 	EArabicWidgetTextPanelLanguage PanelLanguage =
 		EArabicWidgetTextPanelLanguage::Bilingual;

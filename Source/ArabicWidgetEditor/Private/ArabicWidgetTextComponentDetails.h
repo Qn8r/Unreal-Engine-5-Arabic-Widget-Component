@@ -9,7 +9,7 @@ class SWidget;
 
 enum class EArabicWidgetTextPanelLanguage : uint8;
 
-/** تخصيص مترجم للوحة Details الخاصة بالمكوّن. */
+/** لوحة Details للمكوّن. */
 class ARABICWIDGETEDITOR_API FArabicWidgetTextComponentDetails final
 	: public IDetailCustomization
 {
@@ -21,13 +21,13 @@ public:
 	) override;
 
 private:
-	/** يبني قائمة اللغة: العربية أو الإنجليزية أو كلتاهما. */
+	/** قائمة اللغة. */
 	TSharedRef<SWidget> BuildLanguageMenu();
 
-	/** يعيد اسم لغة اللوحة المحددة حالياً. */
+	/** اسم اللغة الحالية. */
 	FText GetCurrentLanguageText() const;
 
-	/** يحفظ التفضيل ويحدّث لوحة Details. */
+	/** يحفظ اللغة. */
 	void SetLanguage(
 		EArabicWidgetTextPanelLanguage NewLanguage
 	);

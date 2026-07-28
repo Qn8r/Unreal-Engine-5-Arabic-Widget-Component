@@ -1,8 +1,12 @@
 #if WITH_DEV_AUTOMATION_TESTS
 
+#include "ArabicWidgetDemoRoom.h"
 #include "ArabicWidgetTextComponent.h"
+#include "Components/StaticMeshComponent.h"
 #include "Engine/Font.h"
 #include "Engine/FontFace.h"
+#include "Engine/StaticMesh.h"
+#include "Engine/World.h"
 #include "GameFramework/Actor.h"
 #include "Misc/AutomationTest.h"
 #include "Tests/AutomationEditorCommon.h"
@@ -140,7 +144,15 @@ bool FArabicWidgetBundledFontsTest::RunTest(
 		TEXT("NotoNaskhArabic"),
 		TEXT("NotoKufiArabic"),
 		TEXT("ReemKufi"),
-		TEXT("ReadexPro")
+		TEXT("ReadexPro"),
+		TEXT("ScheherazadeNew"),
+		TEXT("Lateef"),
+		TEXT("MarkaziText"),
+		TEXT("Harmattan"),
+		TEXT("Mada"),
+		TEXT("Changa"),
+		TEXT("ElMessiri"),
+		TEXT("Alexandria")
 	};
 
 	for (const TCHAR* Family : FontFamilies)
@@ -169,6 +181,91 @@ bool FArabicWidgetBundledFontsTest::RunTest(
 			LoadObject<UFontFace>(nullptr, *FontFacePath)
 		);
 	}
+
+	return true;
+}
+
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(
+	FArabicWidgetDemoRoomTest,
+	"ArabicWidget.Demo.RoomTemplate",
+	EAutomationTestFlags::EditorContext |
+	EAutomationTestFlags::EngineFilter
+)
+
+bool FArabicWidgetDemoRoomTest::RunTest(
+	const FString& Parameters
+)
+{
+	UWorld* World =
+		FAutomationEditorCommonUtils::CreateNewMap();
+
+	AArabicWidgetDemoRoom* Room =
+		World
+		? World->SpawnActor<AArabicWidgetDemoRoom>()
+		: nullptr;
+
+	TestNotNull(TEXT("Demo room can be spawned"), Room);
+
+	if (!Room)
+	{
+		return false;
+	}
+
+	TestEqual(
+		TEXT("Demo room uses four room blocks"),
+		Room->RoomMeshes.Num(),
+		4
+	);
+
+	for (UStaticMeshComponent* RoomMesh : Room->RoomMeshes)
+	{
+		TestNotNull(TEXT("Room block exists"), RoomMesh);
+
+		if (RoomMesh)
+		{
+			UStaticMesh* Mesh = RoomMesh->GetStaticMesh();
+			TestNotNull(TEXT("Room block has a mesh"), Mesh);
+
+			if (Mesh)
+			{
+				TestEqual(
+					TEXT("Room block uses Engine Cube"),
+					Mesh->GetPathName(),
+					FString(TEXT("/Engine/BasicShapes/Cube.Cube"))
+				);
+			}
+		}
+	}
+
+	TestEqual(
+		TEXT("Room has one panel for every bundled font"),
+		Room->FontSamples.Num(),
+		16
+	);
+
+	for (UArabicWidgetTextComponent* Sample : Room->FontSamples)
+	{
+		TestNotNull(TEXT("Font sample exists"), Sample);
+
+		if (Sample)
+		{
+			TestTrue(
+				TEXT("Font sample has a valid font"),
+				Sample->Font.HasValidFont()
+			);
+		}
+	}
+
+	TestNotNull(
+		TEXT("Packaged demo map loads"),
+		LoadObject<UWorld>(
+			nullptr,
+			TEXT(
+				"/ArabicWidget/Demo/"
+				"L_ArabicWidgetDemo.L_ArabicWidgetDemo"
+			)
+		)
+	);
 
 	return true;
 }
