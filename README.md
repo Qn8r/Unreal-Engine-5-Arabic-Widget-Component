@@ -17,7 +17,7 @@
 4. ابحث عن `Arabic Widget Text Actor` .
 
 طريقة الاستخدام:
-اهتيار علامة + ثم البحث 
+اختيار علامة + ثم البحث 
 <img width="3838" height="2061" alt="1" src="https://github.com/user-attachments/assets/881b7329-18b7-44d9-b5eb-3989e62404bd" />
 
 بعد إضافة الاداة: تستطيع التعديل في تفاصيل المكون
