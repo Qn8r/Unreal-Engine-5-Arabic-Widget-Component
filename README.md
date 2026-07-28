@@ -1,4 +1,4 @@
-# مكوّن النص العربي داخل العالم
+# أداة اللغة العربية لانريل انجن 5
 
 **Arabic World Text Component** — a UE5 plugin for correct Arabic text in world space.
 
