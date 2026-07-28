@@ -22,7 +22,7 @@
 
 بعد إضافة الأداة: تستطيع التعديل في تفاصيل المكون
 
-<img width="3838" height="2052" alt="2" src="https://github.com/user-attachments/assets/949c802b-9cc3-43ef-94d7-f9303fc3055c" />
+<img width="1116" height="628" alt="1" src="https://github.com/user-attachments/assets/621ca4ae-d2c7-4b81-b79e-44306b58d735" />
 
 يوجد خيارات كثيرة للتعديل ومن اهمها وضع الكاميرا
 
