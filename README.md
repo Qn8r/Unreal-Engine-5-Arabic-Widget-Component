@@ -24,8 +24,10 @@
 
 يوجد خيارات كثيرة للتعديل ومن اهمها وضع الكاميرا
 
+
 <img width="1131" height="1746" alt="4" src="https://github.com/user-attachments/assets/e6497688-7d3b-4f7b-8b76-f7ebbc00ac07" />
-يمكن ايضا إضافة الأداة داخل البلوبرنت:
+
+يمكن ايضا إضافة الأداة داخل البلوبرنت
 
 <img width="3838" height="2054" alt="5" src="https://github.com/user-attachments/assets/4c1bcae2-a141-43cf-916d-6f3a4fe2586f" />
 
