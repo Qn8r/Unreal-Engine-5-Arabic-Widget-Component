@@ -22,4 +22,4 @@
 المصدر: <https://github.com/google/fonts>
 
 كل خط موزع تحت `SIL Open Font License 1.1`.
-ملف `OFL.txt` وبيانات المصدر موجودة داخل مجلد كل خط في `Resources/Fonts`.
+تفاصيل المصدر والترخيص موجودة في مستودع المشروع.

@@ -9,6 +9,7 @@
 	"CreatedByURL": "https://github.com/Qn8r",
 	"DocsURL": "https://github.com/Qn8r/Unreal-Engine-5-Arabic-Widget-Component#readme",
 	"SupportURL": "https://github.com/Qn8r/Unreal-Engine-5-Arabic-Widget-Component/issues",
+	"EngineVersion": "5.8.0",
 	"CanContainContent": true,
 	"EnabledByDefault": false,
 	"IsBetaVersion": false,
@@ -20,12 +21,18 @@
 		{
 			"Name": "ArabicWidget",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64"
+			]
 		},
 		{
 			"Name": "ArabicWidgetEditor",
 			"Type": "Editor",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64"
+			]
 		}
 	]
 }
