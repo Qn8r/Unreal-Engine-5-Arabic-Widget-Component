@@ -9,6 +9,7 @@
 #include "GameFramework/Actor.h"
 #include "Kismet/GameplayStatics.h"
 #include "Math/TransformCalculus2D.h"
+#include "Runtime/Launch/Resources/Version.h"
 #include "Styling/CoreStyle.h"
 #include "Styling/SlateColor.h"
 #include "UObject/ConstructorHelpers.h"
@@ -73,11 +74,18 @@ namespace ArabicWidgetText
 			);
 
 		Result.LetterSpacing = Source.LetterSpacing;
+
+#if ENGINE_MAJOR_VERSION > 5 || (ENGINE_MAJOR_VERSION == 5 && ENGINE_MINOR_VERSION >= 1)
 		Result.SkewAmount = Source.SkewAmount;
+#endif
+
 		Result.OutlineSettings = Source.OutlineSettings;
 		Result.FontMaterial = Source.FontMaterial;
+
+#if ENGINE_MAJOR_VERSION > 5 || (ENGINE_MAJOR_VERSION == 5 && ENGINE_MINOR_VERSION >= 4)
 		Result.bForceMonospaced = Source.bForceMonospaced;
 		Result.MonospacedWidth = Source.MonospacedWidth;
+#endif
 
 		return Result;
 	}
