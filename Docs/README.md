@@ -15,4 +15,4 @@
 - `Set Two Sided Mode`
 - `Refresh World Text`
 
-الدعم المؤكد حالياً: Unreal Engine 5.8.1 على Win64.
+الدعم المؤكد حالياً: Unreal Engine 5.7.4 و5.8.1 على Win64.

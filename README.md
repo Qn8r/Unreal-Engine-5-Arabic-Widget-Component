@@ -78,9 +78,9 @@ Use it inside a Blueprint | إضافته داخل البلوپرنت
 
 ## Compatibility | التوافق
 
-Built and tested with Unreal Engine 5.8.1 on Win64.
+Built and tested with Unreal Engine 5.7.4 and 5.8.1 on Win64.
 
-تم البناء والاختبار على أنريل إنجن 5.8.1 وWin64.
+تم البناء والاختبار على أنريل إنجن 5.7.4 و5.8.1 وWin64.
 
 ## License | الترخيص
 
